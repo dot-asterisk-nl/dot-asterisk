@@ -44,6 +44,7 @@ li:hover .bounce, li:active .bounce {
 
 .title {
     font-size: 3vmax;
+    margin-bottom: 2vmax;
 }
 
 .name {
@@ -79,4 +80,5 @@ li {
     background-color: #333333;
     box-shadow: 5px 5px 5px #181818;
     opacity: 1;
+    font-size: 1vmax;
 }
