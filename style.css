@@ -17,7 +17,8 @@ body {
     background-color: #333333;
     color: whitesmoke;
     font-family: monospace;
-    font-size: 1vmax;
+    font-size: 1.25vmax;
+    margin: 2%;
 }
 
 .logo {
@@ -47,12 +48,8 @@ li:hover .bounce, li:active .bounce {
     margin-bottom: 2vmax;
 }
 
-.name {
-    font-size: 1.5vmax;
-}
-
 .linkedin {
-    height: 1vmax;
+    height: 1.25vmax;
 }
 
 .content {
