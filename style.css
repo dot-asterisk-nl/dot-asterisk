@@ -1,21 +1,75 @@
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto-Regular.ttf');
+}
+
 body {
     display: block;
     align-items: center;
     background-color: #333333;
     color: whitesmoke;
     font-family: monospace;
+    font-size: 1vmax;
 }
 
 .logo {
-    font-family: sans-serif;
-    font-size: 10em;
-    color: whitesmoke;
+    font-family: Roboto, monospace;
+    font-size: 10vmax;
     padding-left: 40px;
     padding-right: 40px;
     float: right;
+    text-align: center;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: white;
 }
 
 .title {
-    font-size: 2em;
+    font-size: 3vmax;
 }
 
+.name {
+    font-size: 1.5vmax;
+}
+
+.linkedin {
+    height: 1vmax;
+    width: 1vmax;
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+li {
+    width: fit-content;
+}
+
+.hoverfolio:hover .content, .hoverfolio:active .content {
+    display: block;
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    border-radius: 5vmax;
+    padding: 5%;
+    background-color: #333333;
+    box-shadow: 5px 5px 5px #181818;
+    opacity: 1;
+}
