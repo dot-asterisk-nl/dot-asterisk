@@ -1,0 +1,21 @@
+body {
+    display: block;
+    align-items: center;
+    background-color: #333333;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 10em;
+    color: whitesmoke;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: right;
+}
+
+.title {
+    font-size: 2em;
+}
+
