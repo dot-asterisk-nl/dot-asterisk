@@ -38,6 +38,7 @@ body {
     text-align: center;
 }
 
+
 a {
     color: whitesmoke;
     text-decoration: none;
@@ -110,13 +111,33 @@ li {
     margin-bottom: 20px;
 }
 
-.img-container img {
-    height: 8vmax;
+.img-container .img-sm {
+    height: 7vmax;
 }
 
 .img-container {
     padding: 10px;
 }
+
+.img-lg {
+    display: none;
+}
+
+.img-container:hover .img-lg {
+    display: block;
+    position: fixed;
+    height: 80%;
+    left: 15px;
+    top: 0;
+    margin-top: 5%;
+    border: 1px solid #222222;
+    box-shadow: 5px 5px 5px #181818;
+}
+
+.img-container .label {
+    font-size: 1vmax;
+}
+
 .images {
     margin-top: 15px;
     display: inline-flex;
