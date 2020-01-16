@@ -1,44 +1,37 @@
+/* Declarations */
 @font-face {
     font-family: Roboto;
     src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2');
 }
 
 @keyframes bounce {
-    0% { transform: translateY(0px) }
-    25% { transform: translateY(-2px); }
-    50% { transform: translateY(-1px); }
-    75% { transform: translateY(-3px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px)
+    }
+    25% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(-1px);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-body {
-    display: block;
-    align-items: center;
-    background-color: #333333;
-    color: whitesmoke;
-    font-family: monospace;
-    font-size: 1.25vmax;
-    margin: 2%;
-}
-
-.logo {
-    font-family: Roboto, monospace;
-    font-size: 10vmax;
-    padding-left: 40px;
-    padding-right: 40px;
-    left: auto;
-    right: 0;
-    position: fixed;
-    z-index: 100000;
-    text-align: center;
-}
-
-
+/* Links */
 a {
     color: #dbf3ff;
     text-decoration: none;
@@ -49,11 +42,43 @@ a:visited {
 
 }
 
+.bounce {
+    display: inline-flex;
+}
+
+.bounce:visited {
+    color: lightgray;
+}
+
 .bounce:hover {
     cursor: pointer;
     animation: bounce 1s cubic-bezier(0, 0.5, 1, 1.5);
 }
 
+/* General */
+
+body {
+    align-items: center;
+    background-color: #333333;
+    color: whitesmoke;
+    display: block;
+    font-family: monospace;
+    font-size: 1.25vmax;
+    margin: 2%;
+}
+
+.logo {
+    font-family: Roboto, monospace;
+    font-size: 10vmax;
+    text-align: center;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    left: auto;
+    right: 0;
+    position: fixed;
+    z-index: 100000;
+}
 
 .title {
     font-size: 3vmax;
@@ -63,53 +88,14 @@ a:visited {
 .linkedin {
     height: 1.4vmax;
 }
-.content {
-    display: none;
-}
 
 .icon {
     min-width: 2.5vmax;
     max-height: 1.5vmax;
 }
-.bounce {
-    display: inline-flex;
-}
-.bounce:visited {
-    color: lightgray;
-}
 
 li {
     width: fit-content;
-}
-
-.content:target {
-    display: block;
-    animation: fadeIn 0.5s ease-out;
-    position: fixed;
-    max-width: 80vw;
-    width: 700px;
-    height: 70vh;
-    overflow: hidden;
-    left: 0;
-    top: 0;
-    right: 20px;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: 0;
-    border: 1px solid #222222;
-    padding: 5% 10vmax 5% 5%;
-    background-color: #333333;
-    box-shadow: 5px 5px 5px #181818;
-    opacity: 1;
-    font-size: 1vmax;
-}
-
-.quote {
-    color: white;
-    font-style: italic;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .img-container .img-sm {
@@ -124,16 +110,62 @@ li {
     display: none;
 }
 
-.img-container:hover .img-lg {
-    display: block;
+.inline {
+    display: inline-flex;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.details {
     position: fixed;
+    right: 0;
+    bottom: 0;
+    color: gray !important;
+    padding: 5px;
+}
+
+/* Content pages */
+
+.content {
+    display: none;
+}
+
+.content:target {
     animation: fadeIn 0.5s ease-out;
-    height: 80%;
-    left: 15px;
+    display: block;
+    border: 1px solid #222222;
+    background-color: #333333;
+    box-shadow: 5px 5px 5px #181818;
+    opacity: 1;
+    font-size: 1vmax;
+
+    max-width: 80vw;
+    position: fixed;
+    height: 70vh;
+    width: 700px;
+    overflow: hidden;
+    left: 0;
     top: 0;
+    right: 20px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 5% 10vmax 5% 5%;
+}
+
+.img-container:hover .img-lg {
+    animation: fadeIn 0.5s ease-out;
     margin-top: 5%;
     border: 1px solid #222222;
     box-shadow: 5px 5px 5px #181818;
+
+    display: block;
+    position: fixed;
+    height: 80%;
+    left: 15px;
+    top: 0;
 }
 
 .img-container .label {
@@ -147,18 +179,10 @@ li {
     flex-wrap: wrap;
 }
 
-.inline {
-    display: inline-flex;
-}
-
-.no-padding {
-    padding: 0px;
-}
-
-.details {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    color: gray !important;
-    padding: 5px;
+.quote {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
