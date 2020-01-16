@@ -127,6 +127,7 @@ li {
 .img-container:hover .img-lg {
     display: block;
     position: fixed;
+    animation: fadeIn 0.5s ease-out;
     height: 80%;
     left: 15px;
     top: 0;
@@ -144,4 +145,20 @@ li {
     display: inline-flex;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.details {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: gray !important;
+    padding: 5px;
 }
