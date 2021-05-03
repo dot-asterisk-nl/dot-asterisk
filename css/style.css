@@ -2,6 +2,7 @@
 @font-face {
     font-family: Roboto;
     src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2');
+    font-display: swap;
 }
 
 @keyframes bounce {
@@ -141,7 +142,7 @@ li {
     opacity: 1;
     font-size: 1vmax;
 
-    max-width: 80vw;
+    max-width: 70vw;
     position: fixed;
     height: 70vh;
     width: 700px;
