@@ -38,6 +38,13 @@ a {
     text-decoration: none;
 }
 
+a.vibrant {
+    color: #ccffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 a:visited {
     color: lightgray;
 
@@ -64,19 +71,28 @@ body {
     color: whitesmoke;
     display: block;
     font-family: monospace;
-    font-size: 1.25vmax;
+    font-size: max(1.25vmax, 1em);
     margin: 2%;
 }
 
 .logo {
     font-family: Roboto, monospace;
-    font-size: 10vmax;
+    font-size: max(5vmax, 2.5em);
     text-align: center;
 
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: #333333;
     left: auto;
     right: 0;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    box-shadow: 5px 5px 5px #333333;
+    border-radius: 5px;
+
+
+    margin-right: 2%;
+    margin-top: 1%;
     position: fixed;
     z-index: 100000;
 }
@@ -87,12 +103,15 @@ body {
 }
 
 .linkedin {
-    height: 1.4vmax;
+    height: 2em;
 }
 
 .icon {
-    min-width: 2.5vmax;
-    max-height: 1.5vmax;
+    min-width: 2em;
+}
+
+.icon img {
+    max-width: 1em;
 }
 
 li {
@@ -101,10 +120,13 @@ li {
 
 .img-container .img-sm {
     height: 7vmax;
+    border: 1px solid #111111;
 }
 
 .img-container {
     padding: 10px;
+    flex: 1;
+    flex-basis: 25%;
 }
 
 .img-lg {
@@ -124,7 +146,7 @@ li {
     right: 0;
     bottom: 0;
     color: gray !important;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* Content pages */
@@ -140,20 +162,20 @@ li {
     background-color: #333333;
     box-shadow: 5px 5px 5px #181818;
     opacity: 1;
-    font-size: 1vmax;
+    font-size: 1em;
 
     max-width: 70vw;
     position: fixed;
-    height: 70vh;
+    height: 85%;
     width: 700px;
-    overflow: hidden;
+    overflow: auto;
     left: 0;
     top: 0;
-    right: 20px;
+    right: 0;
     margin-top: 2%;
     margin-left: auto;
-    margin-right: 0;
-    padding: 5% 10vmax 5% 5%;
+    margin-right: 1%;
+    padding: 2% 10vmax 0% 5%;
 }
 
 .img-container:hover .img-lg {
@@ -164,20 +186,20 @@ li {
 
     display: block;
     position: fixed;
-    height: 80%;
+    width: min(700px, 100vw);
     left: 15px;
     top: 0;
 }
 
 .img-container .label {
-    font-size: 1vmax;
+    font-size: .75em;
 }
 
 .images {
     margin-top: 15px;
     display: inline-flex;
     text-align: center;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .quote {
@@ -187,3 +209,7 @@ li {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.vertspacer {
+    min-height: 1em;
+} 
