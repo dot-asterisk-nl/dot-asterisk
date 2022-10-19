@@ -133,6 +133,10 @@ li {
     display: none;
 }
 
+.img-lg.img-transparent {
+    background-color: rgba(50,50,50,.9);
+}
+
 .inline {
     display: inline-flex;
 }
