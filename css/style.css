@@ -195,7 +195,7 @@ li {
 
     display: block;
     position: fixed;
-    width: min(700px, 100vw);
+    width: min(700px, 90vw);
     left: 15px;
     top: 0;
 }
@@ -220,14 +220,21 @@ li {
     max-width: 1000px;
 }
 .audio audio {
-    margin-top: 5px;
-    width: 100%;
+    display: block;
+    align-self: end;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
 .audio-container {
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
+    flex: 1;
+    flex-basis: 300px;
+    display: grid;
+    border: solid #2c2c2c;
+    border-radius: 5px;
+    margin: 3px;
 }
 
 .quote {
