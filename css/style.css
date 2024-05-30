@@ -10,13 +10,13 @@
         transform: translateY(0px)
     }
     25% {
-        transform: translateY(-2px);
+        transform: translateY(-.5px);
     }
     50% {
-        transform: translateY(-1px);
+        transform: translateY(0px);
     }
     75% {
-        transform: translateY(-3px);
+        transform: translateY(-.5px);
     }
     100% {
         transform: translateY(0px);
@@ -40,7 +40,6 @@ a {
 
 a.vibrant {
     color: #ccffff;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -73,6 +72,21 @@ body {
     font-family: monospace;
     font-size: max(1.25vmax, 1em);
     margin: 2%;
+}
+
+.blocks {
+    display: inline-flex !important;
+    flex-flow: row wrap;
+}
+
+.block {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.block.wide {
+    flex-basis: 100%;
+    padding-bottom: 2em;
 }
 
 .logo {
@@ -126,12 +140,15 @@ li {
 
 .img-container {
     padding: 10px;
-    flex: 1;
-    flex-basis: 300px;
 }
 
 .img-lg {
     display: none;
+}
+
+.img-lg.profile {
+    left: auto !important;
+    right: 15px;
 }
 
 .img-lg.img-transparent {
@@ -206,17 +223,13 @@ li {
 
 .images {
     margin-top: 15px;
-    display: inline-flex;
     text-align: center;
-    flex-flow: row wrap;
     max-width: 1000px;
 }
 
 .audio {
     margin-top: 15px;
-    display: inline-flex;
     text-align: center;
-    flex-flow: row wrap;
     max-width: 1000px;
 }
 .audio audio {
@@ -229,8 +242,6 @@ li {
 .audio-container {
     width: 100%;
     padding-top: 10px;
-    flex: 1;
-    flex-basis: 300px;
     display: grid;
     border: solid #2c2c2c;
     border-radius: 5px;
@@ -240,7 +251,6 @@ li {
 .quote {
     color: white;
     font-style: italic;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
