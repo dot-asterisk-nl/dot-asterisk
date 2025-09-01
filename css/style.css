@@ -81,6 +81,7 @@ body {
 
 .block {
     flex: 1;
+    padding: 10px;
     flex-basis: 300px;
 }
 
